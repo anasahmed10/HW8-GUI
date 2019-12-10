@@ -1,0 +1,43 @@
+<!-- Name: Anas Ahmed
+     Email: anas_ahmed@student.uml.edu -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <!-- <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="hw6.js"></script>
+    <!-- <script>if (window.module) module = window.module;</script> -->
+  </head>
+  <body>
+    <div id = "bannerimage">
+      <h1>Anas Ahmed HW6</h1>
+    </div>
+    <div id="x-message">Please enter the horizontal axis binding numbers. Order does not matter.</div>
+    <form>
+      <br> <input type = "number" id="x1"> <br>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="1" class="myslider" id = "sliderx1">
+      </div>
+      <br> <input type = "number" id="x2"> <br>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="1" class="slider" id="sliderx2">
+      </div>
+    </form>
+    <div id = "y-message">Please enter the vertical axis binding numbers. Order does not matter.</div>
+    <form>
+      <br> <input type = "number" id="y1"> <br>
+      <br> <input type = "number" id="y2"> <br>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="1" class="slider" id="slidery2">
+      </div>
+    </form>
+    <div id = "slider"></div>
+    <button class = "button" onclick = "createTable()">Process</button>
+    <button class = "button" onclick = "document.location.reload(true)">Reload Page</button>
+    <table id = "dynamicTable"></table>
+  </body>
+</html>
